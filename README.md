@@ -16,3 +16,28 @@ To install the required modules, use the following npm commands:
 ```bash
 npm install express cors
 
+## Data Storage Constants
+
+Three constants are defined for storing data using key-value pairs:
+
+1. **dataTable**
+2. **domiananceTable**
+3. **vehicles**
+
+## API Endpoints
+
+### GET API for Sending Data
+
+To retrieve and send data, use the following GET API endpoint:
+
+```plaintext
+GET /api/data
+
+## Image Serving Middleware
+
+To serve images from the backend to the frontend, the following Express middleware is employed from the images directory:
+
+```javascript
+app.use('/images', express.static(path.join(__dirname, 'images')));
+
+
